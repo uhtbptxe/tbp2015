@@ -9,12 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contact - Business Casual - Start Bootstrap Theme</title>
+    <title>Tau Beta Pi - University of Houston</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/business-casual.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -32,8 +33,10 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="brand">
+        Tau Beta Pi - Texas Epsilon
+    </div>
+    <div class="address-bar">The University of Houston | 4800 Calhoun Road | Houston, Texas 77004</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -47,7 +50,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
+                <a class="navbar-brand" href="index.html">Tau Beta Pi - Texas Epsilon</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,14 +58,59 @@
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html#whoarewe">Who are we?</a>
+                            </li>
+                            <li>
+                                <a href="whatdowedo.html">What do we do?</a>
+                            </li>
+                            <li>
+                                <a href="index.html#officers">Officers</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Initiates & Members <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="becomeAmember.html">How To Become a Member</a>
+                            </li>
+                            <li>
+                                <a href="initiates.html">Initiates</a>
+                            </li>
+                            <li>
+                                <a href="currentmembers.html">Current Members</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact Us</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="faq.html">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="links.html">Useful Links</a>
+                            </li>
+                            <li>
+                                <a href="http://www.tbp.org/home.cfm">Official TBP Website</a>
+                            </li>
+                            <li>
+                                <a href="files/InfoBook.pdf">Tau Beta Pi Infobook (PDF)</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -163,15 +211,29 @@
     </div>
     <!-- /.container -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+<!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-lg-12">
+                            <h3>Find us online!</h3>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://www.facebook.com/groups/txepsilon/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/txepsilon" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/grp/home?gid=4630199" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
