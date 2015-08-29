@@ -388,7 +388,17 @@ ol li p {
     padding-top: 15px;
     text-align: center;
 }
-#whatdowedo-img {
+
+#whatdowedo-hdr-img {
     margin-left: auto;
     margin-right: auto;
+}
+
+#whatdowedo-img {
+    margin: auto;
+    vertical-align: center;
+}
+
+.box-section {
+    padding-top: 25px;
 }
