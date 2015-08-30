@@ -1,8 +1,6 @@
-/*!
- * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/* -----------------------------------------
+   Shared
+----------------------------------------- */
 
 body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -103,16 +101,6 @@ hr {
     margin: 0 auto 0;
 }
 
-footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
-
-footer p {
-    margin: 0;
-    padding: 50px 0;
-}
-
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -205,7 +193,9 @@ footer p {
     background-color: rgba(0,0,0, 0.4);
 }
 
-/* Button Styles */
+/* -----------------------------------------
+   Buttons
+----------------------------------------- */
 
 .btn-outline {
     margin-top: 15px;
@@ -225,7 +215,6 @@ footer p {
     background: #000;
 }
 
-
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -243,7 +232,18 @@ footer p {
     outline: 0;
 }
 
-/* Footer */
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
 
 footer h3 {
     margin-bottom: 15px;
@@ -257,7 +257,9 @@ footer .footer-col {
     margin-bottom: 25px;
 }
 
-/* Links */
+/* -----------------------------------------
+   Links
+----------------------------------------- */
 
 a {
     color: #f05f40;
@@ -270,11 +272,40 @@ a:hover,
 a:focus {
     color: #eb3812;
 }
-/* Links*/
 
 
-/*image gallery*/
-#gallery_box a{
+#officers a {
+  color: inherit;
+}
+
+#officers a:hover,
+#officers a:focus {
+    color: #777;
+}
+/* -----------------------------------------
+   Content Box
+----------------------------------------- */
+
+.content_box_gallery{
+    float:left;
+    clear:both;
+    padding-bottom:5px;
+}
+
+.content_box_gallery a:link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* -----------------------------------------
+   Image Gallery
+----------------------------------------- */
+
+.gallery_box {
+    float: left;
+}
+
+.gallery_box a{
     float:left;
     padding-bottom: 0px;
     color:#fff;
@@ -283,91 +314,48 @@ a:focus {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#gallery_box :hover + #gallery_box_caption{
-    background-color:#262626;
-    opacity:1.0;
-}
-
-#gallery_box_caption {
+.gallery_box_caption {
+    display: block;
     position:absolute;
     width:200px;
-    height:30px;
+    height:40px;
     background-color:#262626;
     opacity:0.8;
-    margin-top:-45px;
+    margin-top:-40px;
     padding-top:10px;
-    padding-bottom:10px;
+    padding-bottom:20px;
 }
 
-
-#gallery_box_caption a:link{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-#gallery_box_caption:hover{
+.gallery_box :hover + #gallery_box_caption{
     background-color:#262626;
     opacity:1.0;
 }
 
-tr td #p2 {
-    padding-bottom: 8px;
-}
-
-.officer_table {
-    text-align: left;
-}
-
-tr th .officerposition {
-    text-align: left;
-}
-
-tr th .officersname {
-    text-align: left;
-}
-
-/* end image gallery */
-
-/* content box section */
-
-#content_box_gallery{
-    clear:both;
-    padding-bottom:50px;
-}
-
-#content_box_gallery a:link{
-    text-decoration: none;
+.gallery_box_caption a:link{
     color: #FFFFFF;
+    text-decoration: none;
 }
 
-/* end content box */
+.gallery_box_caption:hover{
+    background-color:#262626;
+    opacity:0.3;
+}
 
 .well {
    background-color: rgba(245, 245, 245, 0.1);
 }
 
-/* Links */
-
-#officers a {
-  color: inherit;
-}
-
-
-#officers a:hover,
-#officers a:focus {
-    color: #777;
-}
-/*End Links*/
-
-
-/*Section Text */
+/* -----------------------------------------
+   Section Text
+----------------------------------------- */
 .section-text {
     padding-left: 2%;
     padding-right: 2%
 }
-/*End Section Text */
 
-/*FAQ List*/
+/* -----------------------------------------
+  For FAQ Page
+----------------------------------------- */
 ol{
     margin: 0;
 }
@@ -382,8 +370,9 @@ ol li p {
     color: #000;
 }
 
-/*end FAQ List*/
-
+/* -----------------------------------------
+  For What We Do Page
+----------------------------------------- */
 #whatdowedo h3 {
     padding-top: 15px;
     text-align: center;
@@ -392,6 +381,7 @@ ol li p {
 #whatdowedo-hdr-img {
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
 }
 
 #whatdowedo-img {
@@ -401,4 +391,33 @@ ol li p {
 
 .box-section {
     padding-top: 25px;
+}
+
+.list-group-item {
+    background: rgba(0,0,0,0.1);
+}
+
+ol li.list-group-item { 
+    list-style: decimal inside;
+    display: list-item;
+}
+
+ul li.list-group-item { 
+    list-style: none;
+    display: list-item;
+}
+
+/* -----------------------------------------
+  Panels
+----------------------------------------- */
+.panel, 
+.panel-default, 
+.panel-heading,
+.panel-body {
+    background: rgba(0,0,0,0.0);
+    text-align: center;
+}
+
+.panel-default > .panel-heading {
+  background-color: rgba(0,0,0,0.1);
 }
